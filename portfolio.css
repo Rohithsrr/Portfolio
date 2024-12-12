@@ -1,0 +1,259 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #1d3557;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    font-size: 1.2em;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar .nav-links a:hover {
+    background-color: #e63946;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn {
+    background-color: #e63946;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .hero .btn:hover {
+    background-color: #f1faee;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 60px 0;
+    background-color: #f1faee;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #1d3557;
+  }
+  
+  .about p {
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  /* Skills Section */
+  .skills {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f1faee;
+  }
+  
+  .skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #1d3557;
+  }
+  
+  .skills-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .skill-item {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s;
+    text-align: center;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .skill-item i {
+    font-size: 3em;
+    color: #1d3557;
+    margin-bottom: 15px;
+  }
+  
+  .skill-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .skill-item p {
+    font-size: 1em;
+    color: #333;
+  }
+  
+  /* Projects Section */
+  .projects {
+    padding: 60px 0;
+    background-color: #457b9d;
+    color: white;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .project-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: left;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .card-content a {
+    color: #e63946;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .card-content a:hover {
+    color: #1d3557;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 60px 0;
+    background-color: #f1faee;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #1d3557;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form button {
+    background-color: #e63946;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #f1faee;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
